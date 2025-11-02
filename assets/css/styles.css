@@ -164,9 +164,14 @@ body.dark-mode .student-box {
   background: #111827;
   color: #fff;
 }
+body.dark-mode .card-title {
+  background: #111827;
+  color: #fff;
+}
 body.dark-mode .section-title {
   color: #fff;
 }
 body.dark-mode footer {
   background: #020617 !important;
+
 }
