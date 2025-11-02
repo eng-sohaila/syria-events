@@ -5,10 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const usFlag = document.getElementById('usFlag');
   const darkBtn = document.getElementById('darkToggle');
 
-  // لو مش موجودين (صفحة ناقصة) نطلع
-  // بس انتي عندك كل الصفحات فيهم نفس النافبار
-  // فمفروض يكونوا موجودين
-
   // تغيير اللغة إلى عربي
   function toArabic() {
     document.documentElement.lang = 'ar';
@@ -36,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (syFlag) {
-    syFlag.addEventListener('click', toArabic); // <<< هيك كان عندك غلط
+    syFlag.addEventListener('click', toArabic); 
   }
   if (usFlag) {
     usFlag.addEventListener('click', toEnglish);
@@ -105,5 +101,6 @@ const form = document.getElementById("contactForm");
             behavior: 'smooth'
         });
     });
+
 
 
