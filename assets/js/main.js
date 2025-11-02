@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
       el.textContent = el.getAttribute('data-ar');
     });
 
-    if (syFlag) syFlag.classList.remove('d-none');
-    if (usFlag) usFlag.classList.add('d-none');
+    if (syFlag) syFlag.classList.add('d-none');
+    if (usFlag) usFlag.classList.remove('d-none');
   }
 
   // تغيير اللغة إلى إنجليزي
@@ -31,15 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
       el.textContent = el.getAttribute('data-en');
     });
 
-    if (syFlag) syFlag.classList.add('d-none');
-    if (usFlag) usFlag.classList.remove('d-none');
+    if (syFlag) syFlag.classList.remove('d-none');
+    if (usFlag) usFlag.classList.add('d-none');
   }
 
   if (syFlag) {
-    syFlag.addEventListener('click', toEnglish); // <<< هيك كان عندك غلط
+    syFlag.addEventListener('click', toArabic); // <<< هيك كان عندك غلط
   }
   if (usFlag) {
-    usFlag.addEventListener('click', toArabic);
+    usFlag.addEventListener('click', toEnglish);
   }
 
   // الوضع الداكن
@@ -105,4 +105,5 @@ const form = document.getElementById("contactForm");
             behavior: 'smooth'
         });
     });
+
 
